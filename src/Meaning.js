@@ -13,7 +13,6 @@ function Meaning(props){
                         <strong>Definition:</strong>
                          {definition.definition}
                          <br />
-                         
                          <em>{definition.example}</em>  
                          </p>
                       </div>
