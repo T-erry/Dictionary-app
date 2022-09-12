@@ -12,7 +12,6 @@ function Dictionary(){
         setResults(response.data[0]);
      }
     function handleKeywordChange(event){
-        
         setKeyword(event.target.value);
     }
    
