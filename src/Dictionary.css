@@ -1,0 +1,29 @@
+:root{
+--main-border-radius:6px;
+}
+
+
+.Dictionary section{
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--main-border-radius);
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+.Dictionary h1{
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Dictionary input{
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--main-border-radius);
+    border: 1px solid #ddd;
+}
+.Dictionary .hint{
+    font-size: 14px;
+    margin-top: 5px;
+}
