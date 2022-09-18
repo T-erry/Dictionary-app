@@ -3,7 +3,7 @@ import ListenIcon from "./assets/ListenIcon.svg";
 import "./Phonetic.css";
 
 function Phonetic (props){
-    console.log(props.phonetic);
+  
     return(
         <div className="Phonetic">
           <a href={props.phonetic.audio}  rel="noopener noreferrer" target="_blank">
