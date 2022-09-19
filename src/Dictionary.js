@@ -1,10 +1,8 @@
-import React, {useState} from "react";
+import React, {useState}  from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
-  
-
 
 function Dictionary(props){
     const [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -12,8 +10,11 @@ function Dictionary(props){
     const [loaded, setLoaded] = useState(false);
     const [photos, setPhotos] = useState(null);
     
+   
+   
+    
     function handlePexelsResponse(response){
-        setPhotos(response.data);
+        setPhotos(response.data.photos)
     }
     
     function handleDictionaryResponse(response){
@@ -62,8 +63,11 @@ axios.get(pexelsApiUrl, { headers: headers  }).then(handlePexelsResponse);
                hello, coffee, house
                 </div>
                 </section>
+                
                 <Results results={results}/>
                 <Photos photos={photos}/>
+            
+            
             </div>
             
         );
