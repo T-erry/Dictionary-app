@@ -18,6 +18,8 @@ a{
  
 .App-footer{
   text-align: center;
-  margin: 30px 0;
+  margin: 30px;
+  font-size: 14px;
+  margin-top: 20px;
 }
 

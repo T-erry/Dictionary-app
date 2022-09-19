@@ -60,7 +60,7 @@ axios.get(pexelsApiUrl, { headers: headers  }).then(handlePexelsResponse);
                     <input type= "search" autoFocus={true} onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>
                 </form>
                 <div className="hint">
-               hello, coffee, house
+               hello, flower, house
                 </div>
                 </section>
                 
