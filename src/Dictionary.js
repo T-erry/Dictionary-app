@@ -39,7 +39,7 @@ axios.get(apiUrl).then(handleDictionaryResponse);
 
 let pexelsApiKey = "563492ad6f917000010000017695f8195c414674a7fd030ec8ebd4de";  
  
-let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 let headers = {"Authorization" : `Bearer ${pexelsApiKey}`};
 
 axios.get(pexelsApiUrl, { headers: headers  }).then(handlePexelsResponse);

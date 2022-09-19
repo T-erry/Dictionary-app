@@ -1,4 +1,5 @@
 import React from "react";
+import "./Photos.css"
 function Photos(props){
     if (props.photos) {
       console.log(props.photos);
@@ -9,8 +10,9 @@ function Photos(props){
             {props.photos.map(function (photo, index) {
               console.log(photo.src);
               return (
+                
                 <div className="col-sm-4" key={index}>
-          <img src={photo.src.landscape} className="img-fluid" alt="icon" />
+         <a href={photo.src.original} target="_blank"  rel="noopener noreferrer"> <img src={photo.src.landscape} className="img-fluid" alt="icon" /></a>
           </div>
               );
             })}
